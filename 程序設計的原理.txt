@@ -14,8 +14,6 @@
 
 製程的步驟
 
-```c
-
 #include <stdio.h>
 
 int main() {
@@ -25,8 +23,6 @@ int main() {
   return 0;
 
 }
-  
-```
 
 第一步是程序員（coder）使用 C 語言編程，得到 hello.c。
 
@@ -49,4 +45,3 @@ int main() {
 第四段是 heap segment，包含 dynamically allocated memory。
 
 第五段是 stack segment，包含 call stack。
-
