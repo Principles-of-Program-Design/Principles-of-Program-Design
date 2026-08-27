@@ -4,8 +4,6 @@
 
 App 實例委托 Builder 實例：
 
-```java
-
 // TextConverter builder = new ASCIITextConverter();
 // TextConverter builder = new TeXTextConverter();
 TextConverter builder = new TextWidgetConverter();
@@ -36,22 +34,16 @@ while ((Token token = tokenIterator.next()) != null) {
 // ASCIIText result = builder.getASCIIText();
 // TeXText result = builder.getTeXText();
 TextWidget result = builder.getTextWidget();
-  
-```
 
 第二種：Factory
 
 App 實例委托 Factory 實例：
-
-```java
 
 // WidgetFactory factory = new PMWidgetFactory();
 WidgetFactory factory = new MotifWidgetFactory();
 
 Window window = factory.createWindow();
 ScrollBar scrollBar = factory.createScrollBar();
-  
-```
 
 第三種：Prototype
 
@@ -69,36 +61,24 @@ ScrollBar scrollBar = factory.createScrollBar();
 
 App 實例委托 Window 具體類實例：
 
-```java
-
 // Window window = new IconWindow();
 Window window = new TransientWindow();
 
 window.drawBorder();
 window.drawCloseButton();
-  
-```
 
 Window 具體類繼承 Window 抽象類：
 
-```java
-
 drawRect();
 drawText();
-  
-```
 
 Window 抽象類實例委托 WindowImp 具體類實例：
-
-```java
 
 // WindowImp windowImp = new XWindowImp();
 WindowImp windowImp = new PMWindowImp();
 
 windowImp.devDrawLine();
 windowImp.devDrawText();
-  
-```
 
 第七種：Composite
 
@@ -128,27 +108,19 @@ windowImp.devDrawText();
 
 MenuItem 實例委托 Command 實例：
 
-```java
-
 Command findCommand = new FindCommand(application);
 findCommand.execute();
 
 Command replaceCommand = new ReplaceCommand(application);
 replaceCommand.execute();
-  
-```
 
 Command 實例委托 Application 實例：
-
-```java
 
 Document document = application.getDocument();
 document.find(what);
 
 Document document = application.getDocument();
 document.replace(what, with);
-  
-```
 
 第十四種：Interpreter
 
@@ -162,20 +134,12 @@ document.replace(what, with);
 
 Widget 實例委托 Mediator 實例：
 
-```java
-
 mediator.widgetChanged(this);
-  
-```
 
 Mediator 實例委托 Widget 實例：
 
-```java
-
 listBox.getSelection();
 entryField.setText();
-  
-```
 
 第十七種：Memento
 
@@ -185,48 +149,32 @@ entryField.setText();
 
 Subscriber 實例委托 Publisher 實例：
 
-```java
-
 publisher.add(eventType, this);
 publisher.remove(eventType, this);
-  
-```
 
 Publisher 實例委托 Subscriber 實例：
 
-```java
-
 subscriber.notice(event);
-  
-```
 
 第十九種：State
 
 TCPConnection 實例委托 TCPState 實例：
-
-```java
 
 // TCPState state = new TCPClosed();
 // TCPState state = new TCPListen();
 TCPState state = new TCPEstablished();
 
 state.handle();
-  
-```
 
 第二十種：Strategy
 
 Composition 實例委托 Compositor 實例：
-
-```java
 
 // Compositor compositor = new SimpleCompositor();
 // Compositor compositor = new TeXCompositor();
 Compositor compositor = new ArrayCompositor();
 
 compositor.compose();
-  
-```
 
 第二十一種：Template Method
 
@@ -236,8 +184,5 @@ compositor.compose();
 
 Node 實例委托 Visitor 實例：
 
-```java
-
 visitor.visitNode(this);
-  
-```
+
