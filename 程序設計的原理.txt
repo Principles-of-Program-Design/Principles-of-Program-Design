@@ -14,7 +14,7 @@
 
 製程的步驟
 
-第一步是程序員（coder）使用 C 語言編程，得到 hello.c。
+第一步是程序員（coder）使用 C 語言編程，得到 hello.c：
 
 #include <stdio.h>
 
