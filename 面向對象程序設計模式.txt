@@ -1,4 +1,4 @@
-二十二種面向對象程序設計模式
+面向對象程序設計模式
 
 第一種：Builder
 
@@ -185,3 +185,4 @@ compositor.compose();
 Node 實例委托 Visitor 實例：
 
 visitor.visitNode(this);
+  
